@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SCANER ORG NOVA ERA</title>
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:#080d16;
+  color:white;
+  font-family:Arial,sans-serif;
+  text-align:center;
+}
+header{
+  background:#101b2c;
+  padding:25px 10px;
+  border-bottom:2px solid #00d9ff;
+}
+h1{color:#00d9ff;font-size:25px}
+main{padding:25px}
+.panel{
+  background:#111d30;
+  border:1px solid #00d9ff;
+  border-radius:15px;
+  padding:25px;
+  margin:20px auto;
+  max-width:450px;
+}
+button{
+  background:#00cfff;
+  color:#001018;
+  border:0;
+  padding:15px 25px;
+  border-radius:9px;
+  font-size:16px;
+  font-weight:bold;
+}
+#status{color:#00e5a0;margin-top:20px}
+footer{color:#8293a9;padding:20px}
+</style>
+</head>
+<body>
+<header>
+<h1>SCANER ORG NOVA ERA</h1>
+<p>Sistema de análise e segurança</p>
+</header>
+<main>
+<div class="panel">
+<h2>PAINEL DE SCANNER</h2>
+<p>Verificação de segurança do dispositivo</p>
+<button onclick="iniciar()">INICIAR SCANNER</button>
+<h3 id="status">Aguardando início...</h3>
+<p id="resultado">Nenhuma análise realizada.</p>
+</div>
+</main>
+<footer>SCANER ORG NOVA ERA © 2026</footer>
+<script>
+function iniciar(){
+ document.getElementById("status").innerText="Scanner iniciado!";
+ document.getElementById("resultado").innerText=
+ "Demonstração visual: nenhuma análise real do dispositivo foi realizada.";
+}
+</script>
+</body>
+</html>
